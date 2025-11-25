@@ -22,7 +22,7 @@
 Run the entire pipeline in a single command using pipes. This example uses `shuf.a.bed.gz` as the input.
 
 ```bash
-zcat shuf.a.bed.gz | python3 vplot_matrix.py > matrix_long_form.tsv && Rscript vplot_graph.R
+zcat shuf.a.bed.gz | python vplot_matrix.py > matrix_long_form.tsv && Rscript vplot_graph.R
 ```
 #### Output files
 `matrix_long_form.tsv`
